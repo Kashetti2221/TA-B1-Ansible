@@ -5,5 +5,5 @@
   tasks:
   -  name: code to remove git
      yum:
-       name: git
+       name: git-core-2.50.1-1.amzn2023.0.1.x86_64
        state: absent
