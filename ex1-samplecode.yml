@@ -3,7 +3,7 @@
   hosts: all
   become: true
   tasks:
-  -  name: code to install git
+  -  name: code to remove git
      yum:
        name: git
-       state: present
+       state: absent

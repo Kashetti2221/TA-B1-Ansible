@@ -1,3 +1,4 @@
+-
   name: play on sample execution
   hosts: all
   become: true
