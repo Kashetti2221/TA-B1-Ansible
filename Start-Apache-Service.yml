@@ -1,7 +1,7 @@
 ---
  - name: start apache service
    hosts: all
-   become: false
+   become: true
    tasks:
    -  name: start apache service
       service:
