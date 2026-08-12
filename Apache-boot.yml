@@ -1,0 +1,10 @@
+---
+- name: Enable Apache at boot
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Enable Apache service at boot time
+      ansible.builtin.systemd:
+        name: httpd
+        enabled: yes
