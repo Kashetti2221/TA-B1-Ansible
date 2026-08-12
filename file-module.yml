@@ -1,0 +1,11 @@
+---
+- name: Create Apache logs directory
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Create apache-logs directory
+      ansible.builtin.file:
+        path: /opt/apache-logs
+        state: directory
+        mode: '0755'
