@@ -1,0 +1,11 @@
+---
+- name: Create Apache installation log
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Create apache-log.logs and write installation message
+      ansible.builtin.copy:
+        content: "Apache is successfully installed\n"
+        dest: /opt/apache-logs/apache-log.logs
+        mode: '0644'
